@@ -121,7 +121,7 @@ def run_pipeline():
     train_sets = [MemeDataset(os.path.join(BASE_PATH, l), tokenizer, processor) for l in langs if os.path.exists(os.path.join(BASE_PATH, l))]
     train_loader = DataLoader(ConcatDataset(train_sets), batch_size=8, shuffle=True)
 
-    print("🚀 Training starting...")
+    print(" Training starting...")
     model.train()
     for epoch in range(3):
         for batch in tqdm(train_loader, desc=f"Epoch {epoch}"):
@@ -131,7 +131,7 @@ def run_pipeline():
             loss.backward()
             optimizer.step()
 
-    print("📂 Generating Submissions...")
+    print("Generating Submissions...")
     inv_map = {0: "Homophobia", 1: "Transphobia", 2: "Non-anti LGBT"}
     model.eval()
     for l in langs:
@@ -146,7 +146,7 @@ def run_pipeline():
                 pred = torch.argmax(logits, dim=1).item()
                 results.append([batch['id'][0], inv_map[pred]])
         pd.DataFrame(results).to_csv(f"Individual_{l}.csv", index=False, header=False)
-    print("✅ All done! Download Individual_*.csv from the file sidebar.")
+    print("All done! Download Individual_*.csv from the file sidebar.")
 
 if __name__ == "__main__":
     run_pipeline()
