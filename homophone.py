@@ -19,7 +19,7 @@ from google.colab import drive
 
 # --- 1. SETUP ---
 drive.mount('/content/drive')
-BASE_PATH = "/content/drive/MyDrive/LTEDI_DATA"
+BASE_PATH = "./data"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # --- 2. UNIQUE GATED MODEL ---
