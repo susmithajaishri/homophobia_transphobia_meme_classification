@@ -4,8 +4,8 @@ This repository contains the implementation for our submission to the **LT-EDI @
 
 ## Project Overview
 - **Title:** Identifying Homophobia and Transphobia in Multimodal Memes
-- **Author:** [Your Name]
-- **Institution:** M.Tech CSE, NITTTR Chennai
+- **Author:** N.P.SUSMITHA JAISHRI
+- **Institution:** M.Tech AI & ML, NITTTR Chennai
 - **Status:** Rank 3 (Chinese), Rank 4 (English), Rank 7 (Hindi)
 
 ## Methodology
