@@ -18,4 +18,9 @@ We utilize a dual-stream late-fusion architecture:
 1. Clone the repository: `git clone https://github.com/susmithajaishri/homophobia_transphobia_meme_classification.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run training: `python homophone.py`
+
+## Data Setup
+1. Create a folder named `data` in the project root.
+2. Place the `english`, `hindi`, and `chinese` dataset folders inside `/data`.
+3. The script will automatically detect the local path.
   
