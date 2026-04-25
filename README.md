@@ -17,4 +17,5 @@ We utilize a dual-stream late-fusion architecture:
 ## Installation & Usage
 1. Clone the repository: `git clone https://github.com/susmithajaishri/homophobia_transphobia_meme_classification.git`
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run training: `python train.py`
+3. Run training: `python homophone.py`
+  
